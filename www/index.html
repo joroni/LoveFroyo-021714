@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+<<<<<<< HEAD
     <title>DrupalGap</title>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <link rel="stylesheet" href="jquery.mobile-1.4.0.min.css" />
@@ -9,6 +10,160 @@
     <script type="text/javascript" charset="utf-8" src="jdrupal-7.x-1.0-rc2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="bin/drupalgap.js"></script>
     <script type="text/javascript" charset="utf-8" src="app/settings.js"></script>
+=======
+    <title>Love Froyo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="logo.png" type="image/png" />
+   <!-- <link rel="stylesheet" type='text/css' href='css/jquery.mobile-1.4.0.min.css' />
+    <link rel="stylesheet" type='text/css' href='css/jqm-demos.css' />
+    <link rel='stylesheet' type='text/css' href='css/qunit-1.12.0.css' />
+    <link rel='stylesheet' type='text/css' href='css/style.css' />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.0.min.js"></script>
+    <script type='text/javascript' src='js/qunit-1.12.0.js'></script>-->
+    
+    <link rel="stylesheet" type='text/css' href='css/jqm-demos.css' />
+     <link rel='stylesheet' type='text/css' href='css/style.css' />
+      <link rel="stylesheet" type='text/css' href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cordova-incl.js"></script>
+<script type="text/javascript" src="downloader.js"></script>
+    <link rel='stylesheet' type='text/css' href='http://code.jquery.com/qunit/qunit-1.12.0.css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+    <script type='text/javascript' src='http://code.jquery.com/qunit/qunit-1.12.0.js'></script>
+   
+    <!-- include to test binary -->
+     <!--   <script src="bin/jdrupal.js"></script>-->
+    <script src="bin/jdrupal-7.x-1.0-rc2.js"></script>
+    <script type="text/javascript" src="js/SocialSharing.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+ <!--    <script src="bin/jdrupal.min.js"></script> -->
+  <script src="src/base.js"></script>  
+    <!-- includes to test source code -->
+    
+    
+    <script src="src/includes/module.inc.js"></script>
+    <script src="src/includes/froyo_menu.inc.js"></script>
+    <script src="src/comment.js"></script>
+    <script src="src/drupal.js"></script>
+    <script src="src/entity.js"></script>
+    <script src="src/node.js"></script>
+    <script src="src/services/services.comment.js"></script>
+    <script src="src/services/services.entity.js"></script>
+    <script src="src/services/services.js"></script>
+    <script src="src/services/services.node.js"></script>
+    <script src="src/services/services.system.js"></script>
+    <script src="src/services/services.taxonomy_term.js"></script>
+    <script src="src/services/services.taxonomy_vocabulary.js"></script>
+    <script src="src/services/services.user.js"></script>
+    <script src="src/taxonomy_term.js"></script>
+    <script src="src/taxonomy_vocabulary.js"></script>
+    <script src="src/user.js"></script>
+    
+    <!-- include tests -->
+    <script src="tests/services.comment.test.js"></script>
+    <script src="tests/services.node.test.js"></script>
+    <script src="tests/services.system.test.js"></script>
+    <script src="tests/services.taxonomy_term.test.js"></script>
+    <script src="tests/services.taxonomy_vocabulary.test.js"></script>
+    <script src="tests/services.user.test.js"></script>
+    <script id="popup-arrow-script">
+	$.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+		$( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+		evt.preventDefault();
+	});
+	</script>
+	<style id="popup-arrow-css">
+	.clickable-area {
+		display: block;
+		width: 100%;
+		height: 300px;
+		background-color: #ffefef;
+	}
+	.clickable-area:focus {
+		outline: 0;
+	}
+	</style>
+	<style id="tooltip-btn">
+	.ui-btn.my-tooltip-btn,
+	.ui-btn.my-tooltip-btn:hover,
+	.ui-btn.my-tooltip-btn:active {
+		background: none;
+		border: 0;
+	}
+	</style>
+	   <!-- jQuery Plugin -->
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>-->
+<!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+		
+			$(window).load(function() { // makes sure the whole site is loaded
+				$('#status').fadeOut(); // will first fade out the loading animation
+				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+				$('body').delay(350).css({'overflow':'visible'});
+			})
+		
+		//]]>
+		
+		
+	</script> 
+
+	<script>
+	  function connect(){
+		 $().ready(function() {
+		 Drupal.settings.site_path = "http://m.reisandirvys.com"; // http://www.example.com
+      
+      // Set the Service Resource endpoint path.
+      Drupal.settings.endpoint = "rest";
+	  $('#site_path').val(Drupal.settings.site_path);
+             $('#endpoint').val(Drupal.settings.endpoint);
+		 });
+	}
+      </script>
+    
+   
+
+	  
+	  <script>
+	  shareViaTwitter('My message');
+ 
+//shareViaFacebook('Message via Facebook',
+  //               null,
+      //           null,
+    //             console.log('share ok'), // success callback
+        //         function(errormsg){alert(errormsg)}) // error callback
+ 
+/*shareVia('com.apple.social.sinaweibo' // for options, see the repo
+         'Message via Weibo on iOS',
+         null,
+         null,
+         console.log('share ok'), */// success callback
+        /* function(errormsg){alert(errormsg)})*/ // error callback
+	 
+	</script>
+    <script>
+	var data = {
+  // currently required
+  "name": "Love Froyo Share",
+  "iconURL": baseurl+"/firefox16.png",
+  "icon32URL": baseurl+"/firefox32.png",
+  "icon64URL": baseurl+"/firefox64.png",
+
+  "shareURL": baseurl+"/share.html?url=%{url}",
+
+  // should be available for display purposes
+  "description": "Fat-free Fresh Frozen Yogurt designed by you. Served in 30 seconds in an 8 oz. paper cup. Choose from 2 fro-yo flavors (+ the twist) and 6 toppings. Perfect for high schools, corporate offices, colleges, hospitals. Takes only 24 square feet!",
+  "author": "Reis and Irvy's, Love Froyo",
+  "homepageURL": "http://reisandirvys.com/",
+
+  // optional
+  "version": "1.0"
+}
+	</script>
+>>>>>>> FETCH_HEAD
   </head>
   <body onload="drupalgap_onload();"></body>
 </html>
